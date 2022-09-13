@@ -1,14 +1,14 @@
 # Depreceated Batch Scripts
-Many of these scripts are designed to run for one task at a time. The Main.mlx script is very descriptive and will guide you through running this pipeline for one task at a time. The shell scripts were written for use on high performance cluster utilizing a SLURM workflow manager. If you need to adapt these scripts to a Condor or other workflow manager please let me know by flagging an Issue on this repo or emailing me at d.kurtin@surrey.ac.uk
+Many of these scripts are designed to run for one task at a time. The Main.mlx script is very descriptive and will guide you through running this pipeline for one task at a time. The shell scripts were written for use on high performance cluster utilizing a SLURM workflow manager. If you need to adapt these scripts to a Condor or other workflow manager please let me know by flagging an Issue on this repo or email me at d.kurtin@surrey.ac.uk
 
 ## ExtractTimeseries.sh ## 
-This is an example of how to extract timeseries of actvity from HCP subjects using the AAL version 4. 
+This is an example of how to extract timeseries of actvity from HCP subjects using the AAL2. 
 
-## BatchMain.m ## 
-This will be the version of the Main script needed to run the below functions on an HPC. 
+## MainBatch.sh ##
+This wrapper script will run the MATLAB pipelines below in a SLURM high performance computing environment. 
 
-## MainForAll_Batch_NoRest.m ## 
-This script runs the below functions, in order. This script should be edited depending on which HCP task is being analyzed. Comments in the script indicate what needs to be edited per user. For the first run, each step must be run in order. After that, users can run any section in isolation. 
+## MainForAll_Batch_NoRest.m or BatchMain.m ## 
+MainForAll_Batch_NoRest.m runs LEiDA for more than one task, whereas BatchMain.m runs LEiDA for one task at a time. These scripts runs the below functions, in order. BatchMain.m should be edited depending on which HCP task is being analyzed. Comments in the script indicate what needs to be edited per user (such as paths to data or function folders). For the first run, each step must be run in order. After that, users can run any section in isolation. 
 
 ## GetReadyForLEiDA ##
 This function takes extracted timeseries from a task and rest and organizes them for input to LEiDA. 
@@ -22,7 +22,7 @@ This function was first created by Joana Cabral, and the original LEiDA reposito
 - Calculate the instantaneous BOLD synchronization matrix
 - Compute the Leading Eigenvector at each frame from all fMRI scans
 
-2. Cluster the Leading Eigenvectors for k=2:12. 
+2. Cluster the Leading Eigenvectors for k=2:18. 
 - This can be adapted via the 'mink' and 'maxk' vars. I have adapted LEiDA to include and display more cluster validation indices, and the user determines by which method the number of clusters will be selected. 
 
 3. Compute the probability and lifetimes each cluster in each session
@@ -30,9 +30,6 @@ This function was first created by Joana Cabral, and the original LEiDA reposito
 
 4. Plots FC states and errorbars for each clustering solution
 - Adds an asterisk when results are significantly different between blocks
-
-Created by Joana Cabral, Oct 2017, joana.cabral@psych.ox.ac.uk
-First use in: Cabral, et al. 2017 Scientific reports 7, no. 1 (2017): 5135.
 
 ## MakeFigs ##
 This provides additional plots and analysis to LEiDA, including:
