@@ -1,5 +1,5 @@
 # Depreceated Batch Scripts
-The most up-to-date methods (shifting to non-parametric analyses, improved figures, improved workflow, etc) are implemented in the RunLocally folder, which is why this version is depreceated. The Main.mlx script is very descriptive and will guide you through running this pipeline for one task at a time. The shell scripts were written for use on high performance cluster utilizing a SLURM workflow manager. If you need to adapt these scripts to a Condor or other workflow manager please let me know by flagging an Issue on this repo or email me at d.kurtin@surrey.ac.uk
+Though this version of the pipeline works, the most up-to-date methods (shifting to non-parametric analyses, improved figures, improved workflow, etc) are implemented in the RunLocally folder, which is why this version is depreceated. The Main.mlx script is very descriptive and will guide you through running this pipeline for one task at a time. The shell scripts were written for use on high performance cluster utilizing a SLURM workflow manager. If you need to adapt these scripts to a Condor or other workflow manager please let me know by flagging an Issue on this repo or email me at d.kurtin@surrey.ac.uk
 
 ## ExtractTimeseries.sh ## 
 This is an example of how to extract timeseries of actvity from HCP subjects using the AAL2. 
