@@ -2,7 +2,7 @@
 
 This repository contains the software used to . . 
 <ol>
-<li> Format extracted timeseries for use in Leading Eigenvector Dynamic Analysis [LEiDA](https://github.com/juanitacabral/LEiDA/) [1] </li>
+<li> Format extracted timeseries for use in Leading Eigenvector Dynamic Analysis (LEiDA) [1] </li>
 <li> Run LEiDA </li> 
 <li> Compute the following six metrics of state dynamics: </li> 
   <ol>
