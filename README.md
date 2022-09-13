@@ -25,6 +25,7 @@ Questions can be posted as Issues in this repo, or please email d.kurtin@surrey.
 
 ![MethodsFig](https://user-images.githubusercontent.com/45391054/189905410-a0fc1745-2b74-47ec-aa72-f733cde28df4.png)
 
+Many thanks go to Gregory T. Scott, Henry Hebron, Anne C. Skeldon, and Ines R. Violante for their collaboration on this work. 
 
 [1] Cabral, Joana, et al. "Cognitive performance in healthy older adults relates to spontaneous switching between states of functional connectivity during rest." _Scientific reports_ 7.1 (2017): 1-13.
 
