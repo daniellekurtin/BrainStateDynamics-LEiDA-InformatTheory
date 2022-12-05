@@ -23,7 +23,7 @@ Scripts to run this pipeline locally are in the RunLocally folder, whereas RunBa
 
 LEiDA was developed by Cabral et al (2017), with a full repository of resources for LEiDA here: https://github.com/juanitacabral/LEiDA/. This repository extends the LEIDA pipeline by adding several information theoretic metrics, integrating high performance computing templates, and more. Many thanks go to Gregory T. Scott, Henry Hebron, Anne C. Skeldon, and Ines R. Violante for their collaboration on this work. 
 
-Code to compute Lempel Ziv, Block Decomposition Methods of Complexity, and Transition Entropy was written by Greg Scott: https://www.imperial.ac.uk/people/gregory.scott99 
+Code to compute Lempel Ziv Complexity, Block Decomposition Methods of Complexity, and Transition Entropy was written by Greg Scott: https://www.imperial.ac.uk/people/gregory.scott99 
 
 Questions can be posted as Issues in this repo, or emailed to d.kurtin@surrey.ac.uk.
 
