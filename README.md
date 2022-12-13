@@ -23,7 +23,7 @@ Scripts to run this pipeline locally are in the RunLocally folder, whereas RunBa
 
 LEiDA was developed by Cabral et al (2017), with a full repository of resources for LEiDA here: https://github.com/juanitacabral/LEiDA/. This repository extends the LEIDA pipeline by adding several information theoretic metrics, integrating high performance computing templates, and more. Many thanks go to Gregory T. Scott, Henry Hebron, Anne C. Skeldon, and Ines R. Violante for their collaboration on this work. 
 
-Code to compute Lempel Ziv Complexity (LZC), Block Decomposition Methods of Complexity (BDMC), and Transition Entropy was written by Greg Scott: https://www.imperial.ac.uk/people/gregory.scott99. Code to compute LZC calculates the complexity of a finite binary sequence, according to the algorithm published by Abraham Lempel and Jacob Ziv in the paper "On the Complexity of Finite Sequences", published in "IEEE Transactions on Information Theory", Vol. IT-22, no. 1, January 1976. BDMC is computed in line with Soler-Toscano et al. in the paper "Calculating Kolmogorov Complexity from the Output Frequency Distributions of Small Turing Machines" published in PLOS One, 2014. BDMC code employs a MATLAB algorithm based on Zenil et al in the paper "A Decomposition Method for Global Evaluation of Shannon Entropy and Local Estimations of Algorithmic Complexity", published in Entropy in 2018. 
+Code to compute Lempel Ziv Complexity (LZC), Block Decomposition Methods of Complexity (BDMC), and Transition Entropy was written by Greg Scott: https://www.imperial.ac.uk/people/gregory.scott99. Code to compute LZC calculates the complexity of a finite binary sequence, according to the algorithm published by Abraham Lempel and Jacob Ziv in the paper "On the Complexity of Finite Sequences", published in "IEEE Transactions on Information Theory", Vol. IT-22, no. 1, January 1976 [3]. BDMC is computed in line with Soler-Toscano et al in the paper "Calculating Kolmogorov Complexity from the Output Frequency Distributions of Small Turing Machines" published in PLOS One, 2014 [4]. BDMC code employs a MATLAB algorithm based on Zenil et al in the paper "A Decomposition Method for Global Evaluation of Shannon Entropy and Local Estimations of Algorithmic Complexity", published in Entropy in 2018 [5]. 
 
 Other functions that were created by other researchers (such as the ICC function, etc) are credited within each function. Please see either the upcoming paper in Neuroimage (will link when published) or the functions themselves for proper credit. 
 
@@ -33,6 +33,11 @@ Questions can be posted as Issues in this repo, or emailed to d.kurtin@surrey.ac
 
 [1] Van Essen, D.C., Ugurbil, K., Auerbach, E., Barch, D., Behrens, T.E.J., Bucholz, R., Chang, A., Chen, L., Corbetta, M., Curtiss, S.W., Della Penna, S., Feinberg, D., Glasser, M.F., Harel, N., Heath, A.C., Larson-Prior, L., Marcus, D., Michalareas, G., Moeller, S., Oostenveld, R., Petersen, S.E., Prior, F., Schlaggar, B.L., Smith, S.M., Snyder, A.Z., Xu, J., Yacoub, E., 2012. The Human Connectome Project: A data acquisition perspective. _NeuroImage_, Connectivity 62, 2222–2231. 
 
-[2] Cabral, Joana, et al. "Cognitive performance in healthy older adults relates to spontaneous switching between states of functional connectivity during rest." _Scientific reports_ 7.1 (2017): 1-13.
+[2] Cabral, J., Vidaurre, D., Marques, P., Magalhães, R., Silva Moreira, P., Miguel Soares, J., Deco, G., Sousa, N., Kringelbach, M.L., 2017. Cognitive performance in healthy older adults relates to spontaneous switching between states of functional connectivity during rest. Sci Rep 7, 5135. https://doi.org/10.1038/s41598-017-05425-7
 
+[3] Lempel, A., Ziv, J., 1976. On the Complexity of Finite Sequences. IEEE Transactions on Information Theory 22, 75–81. https://doi.org/10.1109/TIT.1976.1055501
+
+[4] Soler-Toscano, F., Zenil, H., Delahaye, J.-P., Gauvrit, N., 2014. Calculating Kolmogorov Complexity from the Output Frequency Distributions of Small Turing Machines. PLOS ONE 9, e96223. https://doi.org/10.1371/journal.pone.0096223
+
+[5] Zenil, H., Hernández-Orozco, S., Kiani, N.A., Soler-Toscano, F., Rueda-Toicen, A., Tegnér, J., 2018. A Decomposition Method for Global Evaluation of Shannon Entropy and Local Estimations of Algorithmic Complexity. Entropy 20, 605. https://doi.org/10.3390/e20080605
 
