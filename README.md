@@ -2,6 +2,10 @@
 
 ### This pipeline works to identify brain states shared across participants and tasks. It computes task-specific metrics of brain state dynamics and evaluates the relationship between brain state dynamics and participant's cognitive ability. ###
 
+The following code was employed for the paper "Task-based differences in brain state dynamics and their relation to cognitive ability", linked here: https://www.sciencedirect.com/science/article/pii/S1053811923000927  
+Please cite this work should you use this code. 
+
+
 This pipeline utilizes data from 187 subjects downloaded from the freely available Human Connectome Project's preprocessed Wu-Minn 1200 healthy young adult dataset [1]. Each subject performed the Working Memory, Relation, Language, and Emotion task while in an fMRI. Timeseries of task activity were extracted from each region of the AAL2 atlas from each subject, and there are functions in this repository to format the extracted timeseries for use in Leading Eigenvector Dynamic Analysis (LEiDA) [2], or you may use the already-curated dataframe provided in this repo for use in the following steps of the pipeline: 
 
 <ol>
